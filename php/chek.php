@@ -19,9 +19,9 @@ else if(mb_strlen($pass)<2||mb_strlen($pass)>10){
     exit();
 }
 
-$pass=md5($pass."samancek2001");
+$pass=md5($pass."HISOKA");
 
-$mysql=new mysqli('localhost','root','saman0901','web-cinema');
+$mysql=new mysqli('localhost','root','HISOKA','HISOKA');
 
 $mysql->query("INSERT INTO `webusers` (`login`,`pass`,`name`) VALUES('$login','$pass','$name')");
 
